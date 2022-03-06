@@ -1,0 +1,18 @@
+a {
+    text-decoration:none;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.35);
+}
+.navbar-light .navbar-text {
+    color: rgba(0,0,0,.85);
+}
+.quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+.nskr {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+nav {
+    width:100%;
+}

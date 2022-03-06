@@ -1,0 +1,38 @@
+#community-menu{
+    color: rgba(0,0,0,.9);
+}
+
+.comment-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fclear:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    content:"";
+}
+
+#community-container{
+    margin: 0 auto;
+    width:70%;
+}
+
+#forum-page{
+    transform: translateY(40%);
+}
+
+.w50{margin: 0 auto; width:50%;}
+.w70{margin: 0 auto; width:70%;}
+.w90{margin: 0 auto; width:90%;}
+.w100{margin: 0 auto; width:100%;}

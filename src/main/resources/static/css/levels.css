@@ -1,0 +1,21 @@
+#navbarDropdownMenuLink{
+    color: rgba(0,0,0,.9);
+}
+.ma{
+    margin:0 auto;
+}
+#stage{
+    width:60%;
+    position:absolute;
+    overflow:hidden;
+}
+
+#levels-container{
+    margin:0 auto;
+    width:70%;
+}
+
+th, td{
+    vertical-align:middle;
+}
+

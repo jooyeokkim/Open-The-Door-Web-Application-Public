@@ -1,0 +1,13 @@
+#restapi-menu{
+    color: rgba(0,0,0,.9);
+}
+
+.api-info{
+    overflow:hidden;
+    margin-bottom:30px;
+}
+
+#restapi-container{
+    margin:0 auto;
+    width:70%;
+}

@@ -1,0 +1,19 @@
+#ranking-menu{
+    color: rgba(0,0,0,.9);
+}
+.ma{
+    margin:0 auto;
+}
+#level-ranking{
+    margin-right:80px;
+}
+
+.w40{
+    margin: 0 auto;
+    width:40%;
+}
+
+#ranking-container{
+    margin:0 auto;
+    width:80%;
+}

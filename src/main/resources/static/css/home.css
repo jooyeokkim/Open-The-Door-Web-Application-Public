@@ -1,0 +1,19 @@
+#home-menu{
+    color: rgba(0,0,0,.9);
+}
+
+#home-container{
+    margin: 0 auto;
+    width:80%;
+}
+
+hr{
+    border : solid 1px black;
+    margin-top : 60px;
+    margin-bottom : 30px;
+}
+
+.w45{margin: 0 auto; width:45%;}
+.w70{margin: 0 auto; width:70%;}
+.w90{margin: 0 auto; width:90%;}
+.w100{margin: 0 auto; width:100%;}

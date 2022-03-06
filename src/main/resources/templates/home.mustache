@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/static/css/home.css"/>
+    <title>Home</title>
+</head>
+<body>
+<div id="main-container" class="quicksand">
+    {{>part/nav}}
+    <div id="home-container" class="mt-4 mb-4">
+        <header class="d-flex justify-content-center mb-4">
+            <div class="d-flex align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                </svg>
+            </div>
+            <div class="text-center fs-1 ms-2">Home</div>
+        </header>
+        <section>
+            <div id="game-info" class="d-flex justify-content-center">
+                <div id="game-info-lbox" class="w45 me-4">
+                    <div class="d-flex mb-2">
+                        <div class="d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                        </div>
+                        <div class="text-center fs-3 ms-2">About The Game</div>
+                    </div>
+                    <table class="table table-primary table-striped table-hover table-bordered border-dark border border-dark border-2">
+                        <tbody>
+                        <tr>
+                            <td colspan="2"><img src="/static/images/mainthumb.PNG" width="100%"></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>Open The Door!</td>
+                        </tr>
+                        <tr>
+                            <td>Engine</td>
+                            <td>Unity</td>
+                        </tr>
+                        <tr>
+                            <td>Genre</td>
+                            <td>3D Maze/Puzzle</td>
+                        </tr>
+                        <tr>
+                            <td>Creator</td>
+                            <td>JooYeok Kim (Korean)</td>
+                        </tr>
+                        <tr>
+                            <td>Platform</td>
+                            <td>Windows(PC), Android(Mobile)</td>
+                        </tr>
+                        <tr>
+                            <td>Language</td>
+                            <td>English</td>
+                        </tr>
+                        <tr>
+                            <td>Release Date</td>
+                            <td>2022-02-20</td>
+                        </tr>
+                        <tr>
+                            <td>Recent Update</td>
+                            <td>2022-02-20 (V1.0.21)</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="game-info-rbox" class="w45">
+                    <div id="pv" class="mb-4">
+                        <div class="d-flex mb-2">
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                                </svg>
+                            </div>
+                            <div class="text-center fs-3 ms-2">Preview Video</div>
+                        </div>
+                        <iframe class="border border-dark border-2" width="100%" height="400" src="https://www.youtube.com/embed/d28cpsmxn5A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div id="dev-comment">
+                        <div class="d-flex mb-2">
+                            <div class="d-flex align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                                    <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+                                </svg>
+                            </div>
+                            <div class="text-center fs-3 ms-2">Creator's Comment</div>
+                        </div>
+                        <div id="comment-box" class="border border-dark border-2 bg-light">
+                            <p class="m-2">
+                                안녕하세요 이 게임의 개발자인 김코더 김주역입니다.<br>
+                                게임 유저분들과 공식 웹사이트에 방문해 주신분들께 감사의 인사를 드립니다.<br>
+                                Open The Door!은 3명의 캐릭터를 조종해서 도착점까지 이동시키는 두뇌게임 입니다.<br>
+                                여러분들은 게임을 빠르게 끝낼 수록 많은 다이아를 얻을 수 있습니다.<br>
+                                각 스테이지마다 세팅된 개발자 기록에도 도전해보세요!<br><br>
+
+                                Hello, I'm JooYeok Kim, the developer of this game.<br>
+                                I would like to thank the game users and those who visited the official website.<br>
+                                Open The Door! is a brain game that controls three characters and moves them to the arrival points.<br>
+                                The faster you finish the game, the more diamonds you can get.<br>
+                                Challenge the developer's record set for each stage!<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="download-container" class="w45">
+                <div class="d-flex justify-content-center mb-2">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center fs-3 ms-2">Download Game</div>
+                </div>
+                <div id="download-buttons" class="d-flex justify-content-center mb-2">
+                    <a href="https://kimcoderbucket.s3.ap-northeast-2.amazonaws.com/openthedoor/open_the_doorV1.21.zip" class="d-flex me-4">
+                        <button type="button" class="btn btn-outline-primary d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-laptop me-1" viewBox="0 0 16 16">
+                                <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                            </svg>
+                            <div>Window (.zip)</div>
+                        </button>
+                    </a>
+                    <a href="https://kimcoderbucket.s3.ap-northeast-2.amazonaws.com/openthedoor/open_the_doorV1.21.apk">
+                        <button type="button" class="btn btn-outline-success d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone me-1" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>
+                            <div>Android (.apk)</div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div id="carousel-container" class="w70">
+                <div class="d-flex justify-content-center mb-2">
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                            <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z"/>
+                        </svg>
+                    </div>
+                    <div class="text-center fs-3 ms-2">About The Website</div>
+                </div>
+                <div id="carousel-with-captions" class="carousel carousel-dark slide border border-dark border-2" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/static/images/levels.PNG" class="d-block w100">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 text-dark p-2">
+                                <b>40개의 스테이지에 대한 정보를 확인해보세요!</b>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/restapi.PNG" class="d-block w100">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 text-dark p-2">
+                                <b>유저, 스테이지, 랭킹 데이터에 대한 REST API를 제공합니다.</b>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/ranking.PNG" class="d-block w100">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 text-dark p-2">
+                                <b>유저 랭킹, 스테이지 랭킹을 확인해보세요!</b>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/community1.PNG" class="d-block w100">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 text-dark p-2">
+                                <b>AI가 댓글의 감정을 분석하여 자동으로 부정/중립/긍정 게시판에 등록해줍니다!</b>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/static/images/community2.PNG" class="d-block w100">
+                            <div class="carousel-caption d-none d-md-block bg-light bg-opacity-75 text-dark p-2">
+                                <b>여러분들의 피드백을 환영합니다!</b>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-with-captions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-with-captions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
